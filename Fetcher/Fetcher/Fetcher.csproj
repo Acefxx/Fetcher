@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleProcess.cs" />
     <Compile Include="frmFetcher.cs">
       <SubType>Form</SubType>
     </Compile>
