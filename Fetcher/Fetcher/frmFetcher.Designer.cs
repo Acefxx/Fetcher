@@ -41,6 +41,7 @@
             this.cmdProcess.TabIndex = 0;
             this.cmdProcess.Text = "Process";
             this.cmdProcess.UseVisualStyleBackColor = true;
+            this.cmdProcess.Click += new System.EventHandler(this.cmdProcess_Click);
             // 
             // lstConsole
             // 

@@ -16,5 +16,17 @@ namespace Fetcher
         {
             InitializeComponent();
         }
+
+        private void cmdProcess_Click(object sender, EventArgs e)
+        {
+            runConsoleCommands();
+        }
+
+        private void runConsoleCommands()
+        {
+            /* Posts console commands for processing */
+            lstConsole.Items.Add(StringHelper.GetDatNow() + txtInput.Text);
+            txtInput.Text = string.Empty;
+        }
     }
 }
