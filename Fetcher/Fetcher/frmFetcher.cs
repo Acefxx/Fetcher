@@ -31,10 +31,23 @@ namespace Fetcher
                 string response = ConsoleProcess.checkCommand(txtInput.Text);
                 if(response != string.Empty)
                 {
-                    lstConsole.Items.Add(response);
+                    List<string> listStrLineElements = response.Split(new string[] { "/n" }, StringSplitOptions.None).ToList();
+                    foreach (string s in listStrLineElements)
+                    {
+                        lstConsole.Items.Add(s);
+                        lstConsole.SelectedIndex = lstConsole.Items.Count - 1;
+                    }
                 }
             }
             txtInput.Text = string.Empty;
+        }
+
+        private void txtInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                runConsoleCommands();
+            }
         }
     }
 }

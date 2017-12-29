@@ -35,28 +35,38 @@
             // 
             // cmdProcess
             // 
+            this.cmdProcess.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdProcess.Location = new System.Drawing.Point(717, 340);
             this.cmdProcess.Name = "cmdProcess";
             this.cmdProcess.Size = new System.Drawing.Size(88, 26);
-            this.cmdProcess.TabIndex = 0;
+            this.cmdProcess.TabIndex = 1;
             this.cmdProcess.Text = "Process";
             this.cmdProcess.UseVisualStyleBackColor = true;
             this.cmdProcess.Click += new System.EventHandler(this.cmdProcess_Click);
             // 
             // lstConsole
             // 
+            this.lstConsole.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lstConsole.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstConsole.ForeColor = System.Drawing.Color.Green;
             this.lstConsole.FormattingEnabled = true;
+            this.lstConsole.ItemHeight = 18;
             this.lstConsole.Location = new System.Drawing.Point(12, 7);
             this.lstConsole.Name = "lstConsole";
-            this.lstConsole.Size = new System.Drawing.Size(792, 329);
-            this.lstConsole.TabIndex = 1;
+            this.lstConsole.Size = new System.Drawing.Size(792, 328);
+            this.lstConsole.TabIndex = 2;
             // 
             // txtInput
             // 
+            this.txtInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtInput.Location = new System.Drawing.Point(12, 344);
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(699, 20);
-            this.txtInput.TabIndex = 2;
+            this.txtInput.TabIndex = 0;
+            this.txtInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
             // 
             // frmFetcher
             // 
